@@ -1,0 +1,16 @@
+**index.html/styles.css
+------------MELHORAR O SLIDE-------------
+
+- Resolver os botões do slide
+- Melhorar a estetica do slide
+
+
+---------------MELHORAR OS CARDS-----------
+
+- Estética
+
+OBS: Utilizar como base para os slides e os cards o site da Unicamp.
+
+-------------------------------
+
+- Criar um calendário correto

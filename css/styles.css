@@ -1,0 +1,354 @@
+/*------------Primeira parte----------*/
+.body-principal{
+    background-image: url(/img/WhatsApp\ Image\ 2022-10-06\ at\ 11.04.56.jpeg);
+    width: 100%;
+    height: 150vh;
+    position: absolute;
+    background-repeat: no-repeat;
+    justify-content: center center;
+    object-position: bottom right;
+    background-size: 100% 100%;
+}
+
+/*Mensagem superior*/
+/*.mensagem-sup{
+    width: 100%;
+    height: 3vh;
+    background-color: #8B008B;
+    font-family: 'Turret Road', cursive;
+}
+
+.titulo-sup{
+    color: white;
+    font-size: smaller;
+    letter-spacing: 0.2rem;
+    justify-content: center;
+    align-items: baseline;
+    display: flex;
+    
+}
+
+.letras-foco{
+    font-size: small;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: yellow;
+    margin-left: 7px;
+
+}*/
+
+/*Navbar*/
+header{
+    width: 100%;
+    height: 18vh;
+    background-color: rgba(21, 22, 21, 0.2);
+}
+
+.menu-header{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.menu-header .lista-do-menu{
+    display: flex;
+    list-style: none;
+}
+
+/*Botões do Navbar*/
+.botao-principal{
+    background-color: transparent;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    width: 180px;
+    height: 60px;
+    /*preparação do efeito efeito*/
+    transform: 2ms ease-in;
+    position: relative; 
+}
+
+/*Botões do Navbar - efeito*/
+.botao-principal:before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    top: 1px;
+    background-color: yellow;
+    transition: 1s;
+}
+
+.botao-principal:hover:before{
+    width: 100%;
+}
+
+/*Botões do Navbar - dropdown*/
+.nav-item-drop{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-botao{
+    position: absolute;
+    display: none;
+    background-color: #8B008B;
+    min-width: 200px;
+}
+
+.dropdown-botao a{
+    border-top: 0.1rem solid black;
+    color: yellow;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-item-drop:hover .dropdown-botao{
+    display: block;
+    
+}
+
+/*Botões do Navbar - dropdown - efeito dos dropdowns*/
+
+.dropdown-itemDCE .dropdown-itemUniversidade .dropdown-itemAlunos{
+    position: relative;
+    transition: 0s;
+}
+
+.dropdown-itemDCE:hover, .dropdown-itemUniversidade:hover, .dropdown-itemAlunos:hover{
+    color: #8B008B;
+    background-color: yellow;
+}
+
+.dropdown-itemDCE:before, .dropdown-itemUniversidade:before, .dropdown-itemAlunos:before{
+    content: '';
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 60px;
+    z-index: -1;
+    transition: 1s;
+}
+
+.dropdown-itemDCE:hover:before, .dropdown-itemUniversidade:hover:before, .dropdown-itemAlunos:hover:before{
+    width: 100%;
+}
+
+
+/*Botões do meio da landing page*/
+.header-main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.botao button{
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid black;
+    color: black;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+
+}
+
+.botao button:hover{
+    color: #FFD700;
+    border: none;
+    background-color: #8B008B;
+}
+
+.botao button:before{
+    content: '';
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 60px;
+    z-index: -1;
+    transition: 1s;
+}
+
+.botao button:hover:before{
+    width: 100%;
+}
+
+
+/*Footer da landing page*/
+.footer-header{
+    width: 100%;
+    height: 15vh;
+    background-color: purple;
+    margin-top: 9.4rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+/*Icones*/
+
+.rodape{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.8vh;
+}
+
+.primeiro-icone{
+    padding-left: 2rem;
+}
+
+.rodape a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    position: relative;
+    transition: 0s;
+}
+
+.rodape a:hover{
+    color: #FFD700;
+}
+
+/*Frase*/
+.lema{
+    font-family: 'Grechen Fuemen', cursive;
+    color: white;
+}
+
+.letras-foco{
+    color: yellow;
+}
+
+
+/*----------------Segunda Parte--------------*/
+.body-secundario{
+    background-image: linear-gradient(90deg, #4B0082, 	#8B008B);
+    width: 100%;
+    height: 425vh;
+}
+
+/*.news{
+    height: 10px;
+    width: 300px;
+}
+
+.novidades{
+    padding-top: 2rem;
+    color: yellow;
+    font-family: 'Lato', sans-serif;
+    border-bottom: 0.5px solid yellow;
+}*/
+
+/*Slides*/
+.container-fluid{
+    padding: 0;
+    padding-top: 0.3rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#mainSlider .carousel-inner, #main-Slider .carousel-item{
+    height: 90vh;
+}
+
+#mainSlider .carousel-item{
+    background-size: 100% 100%;
+    justify-content: center center;
+    height: 100%;
+}
+
+#mainSlider h1{
+    box-shadow: black;
+}
+
+/*Cards*/
+.card{
+    background-color: purple;
+    border: 1px solid black;
+}
+
+.card-body, h3{
+    color: white;
+}
+
+#featured-container .card{
+    border-radius: 0;
+    margin-top: 3rem;
+}
+
+#featured-container .card-body{
+    background-color: transparent;
+}
+
+/*Eventos*/
+
+.mensagem{
+    height: 20px;
+    width: 30px;
+}
+
+.texto-mensagem{
+    padding-top: 2rem;
+    color: yellow;
+    font-family: 'Lato', sans-serif;
+    border-bottom: 0.5px solid yellow;
+}
+
+/*Calendário*/
+table{
+    background-color: purple;
+    color: yellow;
+
+}
+
+th, td { 
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+/*----------Terceira parte--------*/
+
+/*Footer*/
+footer{
+    padding-top: 3rem;
+    background-color: purple;
+    border-top: 1px solid black;
+    height: 65vh;
+}
+
+.lista-de-links{
+    color: yellow;
+}

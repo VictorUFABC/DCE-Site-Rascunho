@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap" rel="stylesheet">
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="card-login">
+            <img class="logo" src="/img/dce-ufabc_logo.png" alt="dce-logo" width="80" height="80">
+            <h1>Login</h1>
+            <div class="campo-usuario">
+                <input type="text" name="usuario" placeholder="Usuário">
+            </div>
+            <div class="campo-senha">
+                <input type="password" name="senha" placeholder="Senha">
+            </div>
+            <button class="botao-do-login">Login</button>
+            <div class="else-ocasiao">
+                <div class="campo-cadastro">
+                    <a href="#"><h5>Não tem conta? Cadastre-se.</h5></a>
+                </div>
+                <div class="campo-senha-2">
+                    <a href="#"><h5>Esqueceu a senha?</h5></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

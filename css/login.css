@@ -1,0 +1,167 @@
+/*Mobile First*/
+
+/*Celulares e tablets*/
+
+@media (min-width: 50px) and (max-width: 800px) {
+
+    body{
+        width: auto;
+        overflow: hidden;
+        background-image: linear-gradient(90deg, #4B0082,	#8B008B );
+    }
+
+    .main-login{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-login{
+        background-color: yellow;
+        height: 500px;
+        width: 250px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        margin-bottom: 5px;
+    }
+    
+    input{
+        padding: 20px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        width: 200px;
+        margin-bottom: 1rem;
+    }
+    
+    button{
+        background-color: purple;
+        border: none;
+        padding: 15px;
+        width: 100%;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: #4B0082;
+    }
+
+    .else-ocasiao a{
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        color: purple;
+        font-size: 20px;
+    }
+
+    .else-ocasiao a:hover{
+        color: #4B0082;
+    }
+
+}
+
+/*Notebook e Computadores*/
+
+@media (min-width: 801px) and (max-width: 2000px) {
+    body{
+        background-image: linear-gradient(90deg, #4B0082,	#8B008B );
+        overflow: hidden;
+    }
+    
+    .main-login{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-login{
+        background-color: yellow;
+        height: 500px;
+        width: 350px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo{
+        margin-bottom: 2rem;
+    }
+    
+    input{
+        padding: 20px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        width: 18rem;
+        margin-bottom: 1rem;
+    }
+    
+    button{
+        background-color: purple;
+        border: none;
+        padding: 15px;
+        width: 100%;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        margin-top: 1.5rem;
+    }
+    
+    button:hover{
+        background-color: #4B0082;
+    }
+    
+    .else-ocasiao a{
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        color: purple;
+        font-size: 20px;
+        /*preparação do efeito efeito*/
+        transform: 2ms ease-in;
+        position: relative; 
+    }
+    
+    .else-ocasiao a::before{
+        position: absolute;
+        content: '';
+        bottom: 0px;
+        left: 0px;
+        width: 0px;
+        height: 0.5px;
+        transition: 1s;
+        background-color: #4B0082;
+    }
+    
+    .else-ocasiao a:hover::before{
+        width: 100%;
+    }
+    
+    .else-ocasiao a:hover{
+        color: #4B0082;
+    }
+    
+    .campo-cadastro{
+        margin-top: 1rem;
+    }
+}
